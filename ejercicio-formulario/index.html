@@ -23,6 +23,19 @@
             left: 100px;
             top: 140px;
         }
+        #color red {
+            background-color: red;
+        }
+
+        #color blue {
+            background-color: blue;
+        }
+        #color black {
+            background-color: rgba(42, 42, 42, 0.052);
+        }
+        #color yellow {
+            background-color: yellow;
+        }
     </style>
 </head>
 
@@ -34,15 +47,6 @@
                 <label for="words">Texto (máximo 10 caracteres):</label>
                 <input type="text" id="words" name="words" maxlength="10" required>
             </div>
-            <!-- <div>
-                <p>Elige el tamaño de tu camiseta: </p>
-                <input type="radio" id="size" name="size">
-                <label for="size">S</label>
-                <input type="radio" id="size" name="size" checked>
-                <label for="size">M</label>
-                <input type="radio" id="size" name="size">
-                <label for="size">L</label>
-            </div> -->
             <div>
                 <label for="size">Elige la talla de tu camiseta:</label>
                 <select name="size" id="size">
@@ -52,7 +56,14 @@
                 </select>
             </div>
             <div>
-                <p>Elige el color de tu camiseta:</p>
+                <label for="color">Elige el color de tu camiseta:</label>
+                <select name="color" id="color">
+                    <option value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="white" selected>Blanco</option>
+                    <option value="black">Negro</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
 
             </div>
             <div class="form-group">
