@@ -32,7 +32,16 @@
         <form action="#" method="" class="form" id="shirt-form">
             <div class="form-group">
                 <label for="words">Texto (máximo 10 caracteres):</label>
-                <input type="text" id="words" name="words" required>
+                <input type="text" id="words" name="words" maxlength="10" required>
+            </div>
+            <div>
+                <p>Elige el tamaño de tu camiseta: </p>
+                <input type="radio" id="size" name="size">
+                <label for="size">S</label>
+                <input type="radio" id="size" name="size" checked>
+                <label for="size">M</label>
+                <input type="radio" id="size" name="size">
+                <label for="size">L</label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Enviar">
