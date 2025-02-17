@@ -34,7 +34,7 @@
                 <label for="words">Texto (máximo 10 caracteres):</label>
                 <input type="text" id="words" name="words" maxlength="10" required>
             </div>
-            <div>
+            <!-- <div>
                 <p>Elige el tamaño de tu camiseta: </p>
                 <input type="radio" id="size" name="size">
                 <label for="size">S</label>
@@ -42,6 +42,18 @@
                 <label for="size">M</label>
                 <input type="radio" id="size" name="size">
                 <label for="size">L</label>
+            </div> -->
+            <div>
+                <label for="size">Elige la talla de tu camiseta:</label>
+                <select name="size" id="size">
+                    <option value="s-size">S</option>
+                    <option value="m-size" selected>M</option>
+                    <option value="l-size">L</option>
+                </select>
+            </div>
+            <div>
+                <p>Elige el color de tu camiseta:</p>
+
             </div>
             <div class="form-group">
                 <input type="submit" value="Enviar">
